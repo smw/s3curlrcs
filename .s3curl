@@ -1,0 +1,7 @@
+%awsSecretAccessKeys = (
+    # lab
+    nsuser1 => {
+        id => 'nsuser1',
+        key => 'PBYwPN3rLCsnhctmqcucwO6iZcA4OLo7lp1IA455',
+    },
+);
