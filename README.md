@@ -1,7 +1,7 @@
 This script is a wrapper around curl, a popular command line http client, that
 will calculate the authentication parameters for the request.
 
-To start, create an .s3curl file in your home directory.  This file will contain your
+To start, create an `.s3curl` file in your home directory.  This file will contain your
 AWS Access Key Id and AWS Secret Access Key pairs.
 
 For example:
@@ -103,7 +103,7 @@ where, contents of `~/versioningEnable` is
 </VersioningConfiguration>
 ```
 
-Doing a GET for an object on a bucket where versioning is enabled, returns the latest version. 
+Doing a GET for an object on a bucket where versioning is enabled, returns the latest version.
 
 ```
 ./s3curl.pl --id=[friendly-name] -- http://s3.amazonaws.com/[bucket-name]/[key-name] -v
