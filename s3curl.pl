@@ -97,6 +97,9 @@ my $CURL = "curl";
 
 # stop customizing here
 
+# so that POSIX::strftime returns consistent result in any locale
+POSIX::setlocale(POSIX::LC_TIME, "C");
+
 my $cmdLineSecretKey;
 my %awsSecretAccessKeys = ();
 my $keyFriendlyName;
