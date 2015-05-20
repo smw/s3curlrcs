@@ -65,7 +65,7 @@ my @endpoints = (
         # existing
         'storage.emcrubicon.com',
         'os.vca.vmware.com',
-        'objectstorage,emcrubicon.com',
+        'objectstorage.emcrubicon.com',
         # May 2015 additions
         'eos-us.vca.vmware.com',
         'eos-us-east-1.vca.vmware.com',
