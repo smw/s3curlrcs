@@ -38,59 +38,89 @@ use constant STAT_UID => 4;
 #       's3-sa-east-1.amazonaws.com',
 
 my @endpoints = (
-        # useful testing defaults
+        # local testing hostname / address:
         'localhost',
         '127.0.0.1',
-        # existing DCoE lab sites:
+        
+        # lab hostnames:
         'dhrm01s1.osaas-lab.rcsops.com',
         'dhrm01s2.osaas-lab.rcsops.com',
         'os.osaas-lab.rcsops.com',
-        # lab ECR IPs:
-        # site01
+        
+        # lab ECR site01 addresses:
         '172.29.26.13', '172.29.26.14',
-        # site02
+        # lab ECR site02 addresses:
         '172.29.26.77', '172.29.26.78',
-        # Lab ECS node IPs:
-        # nileb01-r0x-01 (site01)
+        
+        # lab ECS testing sites (ECS 2.0)
+        # apollo01
         '172.29.0.20',
+        # apollo02
         '172.29.0.84',
+        # apollo03
         '172.29.0.148',
+        # apollo04
         '172.29.0.212',
-        # nileb02-r0x-01 (site02)
-        '172.29.1.20',
-        '172.29.1.84',
-        '172.29.1.148',
-        '172.29.1.212',
-        # Gouda sites:
-        # existing
+        # beta01
+        '172.29.2.148',
+        # beta02
+        '172.29.2.212',
+        # cronus01
+        '172.29.1.148', '172.29.1.212', '172.29.2.20', '172.29.2.84',
+        # cronus02
+        '172.29.4.20', '172.29.4.84', '172.29.4.148', '172.29.4.212',
+        # viva01
+        '172.29.3.148',
+        # viva02
+        '172.29.3.212',
+        
+        # lab ECS testing sites (ViPR 2.1)
+        # feta01
+        '172.29.3.20',
+        # feta02
+        '172.29.3.84',
+        
+        # gouda beta hostname:
         'storage.emcrubicon.com',
-        'os.vca.vmware.com',
-        'objectstorage.emcrubicon.com',
-        # May 2015 additions
+        # gouda vca hostnames:
         'eos-us.vca.vmware.com',
         'eos-us-east-1.vca.vmware.com',
         'eos-us-west-1.vca.vmware.com',
-        # Gouda ECR IPs:
-        # lsvg01-beta
-#       '173.243.48.204',
-        '173.243.48.205', '173.243.48.206', '173.243.48.207',
-        # lsvg01-vca
-#       '173.243.48.208',
-        '173.243.48.209', '173.243.48.210', '173.243.48.211',
-        # lsvg01-prod
-#       '173.243.48.212',
-        '173.243.48.213', '173.243.48.214', '173.243.48.215',
-        # stng01-vca
+        'os.vca.vmware.com',
+        # gouda prod hostname:
+        'objectstorage.emcrubicon.com',
+        
+        # gouda ECR stng01-beta addresses:
+#       '173.243.62.10', '173.243.62.11', 
+        '173.243.62.14', '173.243.62.15',        
+        # gouda ECR stng01-vca addresses:
 #       '173.243.62.16',
         '173.243.62.17', '173.243.62.18', '173.243.62.19',
-        # stng01-prod
+        # gouda ECR stng01-prod addresses:
 #       '173.243.62.20',
         '173.243.62.21', '173.243.62.22', '173.243.62.23',
-        # Gouda ECS node IPs (prod):
-        # nilea01-r05-01.lsvg01
-        '172.29.112.75',
-        # nilea01-r05-01.srng01
-        '172.29.96.75',
+        # gouda ECR lsvg01-beta addresses:
+#       '173.243.48.204',
+        '173.243.48.205', '173.243.48.206', '173.243.48.207',
+        # gouda ECR lsvg01-vca addresses:
+#       '173.243.48.208',
+        '173.243.48.209', '173.243.48.210', '173.243.48.211',
+        # gouda ECR lsvg01-prod addresses:
+#       '173.243.48.212',
+        '173.243.48.213', '173.243.48.214', '173.243.48.215',
+        
+        # gouda ECS staging sites (ECS 2.0)
+        # stng01
+        '172.29.96.11', '172.29.96.19', '172.29.96.27', '172.29.96.35',
+        # lsvg01
+        '172.29.112.11', '172.29.112.19', '172.29.112.27', '172.29.112.35',
+        
+        # gouda ECS prod sites (ViPR 2.1)
+        # stng01
+        '172.29.96.75', '172.29.96.83', '172.29.96.91', '172.29.96.99',
+        # lsvg01
+        '172.29.112.75', '172.29.112.83', '172.29.112.91', '172.29.112.99',
+
 );
 
 my $CURL = "curl";
