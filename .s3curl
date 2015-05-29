@@ -4,4 +4,9 @@
         id => 'betauser1',
         key => 'dA1oG1EVUlNdIjHX/4CBfY9ExL5dMdhe0lME/ojU',
     },
+    # gouda staging
+    ecr_functional_test => {
+        id => 'ecr_functional_test',
+        key => 'tTnnc6kG5HfhNUQtOzHGuKk30usRO2w2ZJZud+Nd',
+    },    
 );
