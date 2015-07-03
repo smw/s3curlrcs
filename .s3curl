@@ -4,6 +4,14 @@
         id => 'betauser1',
         key => 'dA1oG1EVUlNdIjHX/4CBfY9ExL5dMdhe0lME/ojU',
     },
+    vivauser1 => {
+        id => 'vivauser1',
+        key => 'XtW4A5G7QfAGVtsGLVL8uDy47S2A6LrvkPTDNdrC',
+    },
+    vivauser2 => {
+        id => 'vivauser2',
+        key => '8vijCpSvUIBKXG3sDz9qfLiS5nFdxaIIk/1swCY0',
+    },
     # gouda staging
     ecr_functional_test => {
         id => 'ecr_functional_test',
