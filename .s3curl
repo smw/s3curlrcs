@@ -1,20 +1,25 @@
 %awsSecretAccessKeys = (
-    # lab
-    betauser1 => {
-        id => 'betauser1',
-        key => 'dA1oG1EVUlNdIjHX/4CBfY9ExL5dMdhe0lME/ojU',
+    # Lab Standard Object Users
+    # from https://github.emcrubicon.com/CloudLabs/LabEnvironments/wiki/ECS-User-Accounts
+    wet => {
+        id => 'wet',
+        key => 'VDS83Wb0ik4wpnb9aLPw03Rdrj/ArWuEAQdMb8/B',
     },
-    vivauser1 => {
-        id => 'vivauser1',
-        key => 'XtW4A5G7QfAGVtsGLVL8uDy47S2A6LrvkPTDNdrC',
+    cicduser1 => {
+        id => 'cicduser1',
+        key => '71bDHBwHFUCM/GRl9BgjvQq3xicELvrL2hx1WgHS',
     },
-    vivauser2 => {
-        id => 'vivauser2',
-        key => '8vijCpSvUIBKXG3sDz9qfLiS5nFdxaIIk/1swCY0',
+    iphone_lab => {
+        id => 'iphone_lab',
+        key => 'N5CMmxP2bI7flYrzpSoL5NJsxrREGAtzVa5YU33x',
+    },
+    cicduser2 => {
+        id => 'cicduser2',
+        key => '6yoqhpG2/Pb+XDk7ObQ63GJESQxeNt6NKftrDGuL',
     },
     # gouda staging
     ecr_functional_test => {
         id => 'ecr_functional_test',
         key => 'tTnnc6kG5HfhNUQtOzHGuKk30usRO2w2ZJZud+Nd',
-    },    
+    },
 );
